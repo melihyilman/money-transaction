@@ -17,7 +17,7 @@
 > to create account (POST)
 
 ```
-  /create-account/  (& params =  accountNumber, currencyCode, balance)
+  /create-account/  (&params =  accountNumber, currencyCode, balance)
 
   {
     "accountNumber": 55,
