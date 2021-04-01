@@ -17,7 +17,7 @@
 > to create account (POST)
 
 ```
-  /create-account  & params  accountNumber, currencyCode, balance
+  /create-account/  (& params =  accountNumber, currencyCode, balance)
 
   {
     "accountNumber": 55,
@@ -29,7 +29,7 @@
 > to send amount (POST)
 
 ```
-  /transfer-money &params senderAccountNumber, receiverAccountNumber, amount
+  /transfer-money/ (&params = senderAccountNumber, receiverAccountNumber, amount)
     {
         "senderAccountNumber": 1,
         "receiverAccountNumber": 6,
