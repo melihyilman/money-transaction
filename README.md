@@ -1,8 +1,38 @@
 # money-transaction
 
-> to get account list use
+## Routes
 
-````
+> to get list of accounts
+
+```
   /accounts
-``` route
-````
+```
+
+> to get list of transactions use
+
+```
+  /transactions
+```
+
+> to create account (POST)
+
+```
+  /create-account  & params  accountNumber, currencyCode, balance
+
+  {
+    "accountNumber": 55,
+    "currencyCode": "TRY",
+    "balance": 1001
+ }
+```
+
+> to send amount (POST)
+
+```
+  /transfer-money &params senderAccountNumber, receiverAccountNumber, amount
+    {
+        "senderAccountNumber": 1,
+        "receiverAccountNumber": 6,
+        "amount":10
+    }
+```
